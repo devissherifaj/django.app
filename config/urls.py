@@ -1,3 +1,4 @@
+from core.views import  test_view , subject_list , subject
 """config URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,4 +19,7 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("test/",test_view),
+    path("subject-list/",subject_list),
+    path("subject/<int:numri>/",subject)
 ]
